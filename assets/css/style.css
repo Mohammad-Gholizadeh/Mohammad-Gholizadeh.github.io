@@ -1,0 +1,434 @@
+@font-face {
+  font-family: "BYekan";
+  src: url("/assets/fonts/BYekan/BYekan-webfont.eot") format("eot"),
+    url("/assets/fonts/BYekan/BYekan-webfont.woff") format("woff"),
+    url("/assets/fonts/BYekan/BYekan-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.w_100 {
+  width: 100% !important;
+}
+
+/* *{ font-family: "BYekan";} */
+
+@media (min-width: 600px) {
+  .top_navbar {
+    box-shadow: 0 0 50px gray !important;
+  }
+
+  #top_actions_section {
+    display: flex !important;
+    align-items: center;
+  }
+}
+
+.users_list_item.active .users_list_arrow_icon {
+  transform: rotate(180deg);
+}
+
+.users_list_item.active,
+.users_list_item.active .collapsible-header {
+  background-color: rgba(190, 185, 185, 0.322);
+}
+
+table.highlight > tbody > tr:hover {
+  background-color: #bbdefb;
+}
+
+.add_user_modal_back {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.add_user_modal {
+  position: fixed;
+  height: 70vh;
+  background-color: white;
+  bottom: 0;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  bottom: -70vh;
+}
+
+.add_user_modal.show {
+  box-shadow: 0 0 10px blue;
+  bottom: 0;
+}
+
+.user_list_section {
+  height: calc(100vh - 258px);
+  overflow: auto;
+}
+
+.page_number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.col_green {
+  color: rgb(124, 241, 7);
+}
+
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* #################################Skills########################################### */
+.skillbars {
+  width: 100%;
+}
+.skillbars .skillbar {
+  width: 100%;
+  height: 35px;
+  border: #dedede 0.1rem solid;
+  border-radius: 0.6rem;
+  position: relative;
+  cursor: default;
+  margin: 0 0 1.5rem 0;
+}
+.skillbars .skillbar.show .skillbar-label {
+  color: #dedede;
+}
+.skillbars .skillbar:hover .skillbar-label {
+  transform: translate(0, -0.5rem);
+  color: #dedede;
+}
+.skillbars .skillbar:hover .skillbar-bg {
+  transform: translate(0, 0rem);
+  box-shadow: 0 1rem 3.5rem #1b1b1b;
+}
+.skillbars .skillbar .skillbar-label {
+  width: 110px;
+  height: 35px;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  z-index: 5;
+  transition: all 250ms;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  background-color: rgb(169, 82, 24);
+}
+.skillbars .skillbar .skillbar-bg {
+  position: absolute;
+  top: 0;
+  transition: all 250ms;
+  transition-timing-function: ease-in-out;
+  left: 0;
+  z-index: 1;
+  background-color: rgb(27, 19, 12);
+  border-radius: 0.5rem;
+  width: 0;
+  height: 35px;
+}
+
+.skillbars .skillbar .skillbar-labeltx {
+  width: 120px;
+  height: 35px;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 5;
+  transition: all 250ms;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+}
+
+.skillbars .skillbar:hover .skillbar-labeltx {
+  transform: translate(0, -0.5rem);
+  color: #dedede;
+}
+
+.skillbars .skillbar .skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-weight: bold;
+  font-size: 15px;
+  height: 35px;
+  line-height: 35px;
+  color: rgb(0, 0, 0);
+  z-index: 10000;
+}
+
+/* #################################Skills########################################### */
+
+/* ############################Interested Area############################################# */
+
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+
+section {
+  min-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1) {
+  color: #e0ffff;
+}
+section:nth-child(2) {
+  color: #42455a;
+  background: #e0ffff;
+}
+section:nth-child(3) {
+  color: #e0ffff;
+}
+section:nth-child(4) {
+  color: #ffffff;
+  background: #e0ffff;
+}
+section .container {
+  margin: 0px;
+}
+section h1 {
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container {
+  display: flex;
+}
+section .text-container .text-box {
+  margin: 20px;
+  padding: 20px;
+  background: #00c2cb;
+}
+section .text-container .text-box h3 {
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+section .text-container .text-box p {
+  text-align: center;
+  text-justify: distribute;
+  color: #ffffff;
+}
+
+
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container {
+    flex-direction: column;
+  }
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* ############################Interested Area############################################# */
+
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+.progressbar {
+  display: inline-block;
+  width: 100px;
+  margin: 25px;
+}
+
+.circle {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.circle canvas {
+  vertical-align: middle;
+}
+
+.circle div {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.circle p {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.circle strong i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+.circle span {
+  display: block;
+  color: #aaa;
+  margin-top: 12px;
+}
+
+/* ########################################################################## */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+/* PRELOADER CSS */
+.page-loader{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background: #807f7f;
+	z-index: 1000;
+	.txt{
+		color: white;
+		text-align: center;
+		top: 40%;
+		position: relative;
+		text-transform: uppercase;
+		letter-spacing: 0.3rem;
+		font-weight: bold;
+		line-height: 1.5;
+	}
+}
+
+/* SPINNER ANIMATION */
+.spinner {
+	position: relative;
+	top: 35%;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  background-color: #012eb3;
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in;
+  animation: sk-scaleout 1.0s infinite ease-in;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+/* ########################################################################## */
+.loading-spinner{
+	position:relative;
+	display:block;
+  }
+  @keyframes spinner {
+	to {transform: rotate(360deg);}
+  }
+  .btspinner {
+	  min-height:0px;
+  }
+  .btspinner:before {
+	content: '';
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	margin-top: -10px;
+	margin-left: -10px;
+	border-radius: 50%;
+	border: 20px solid #39be00;
+	border-top-color: #39be00;
+	animation: spinner-grow 1s ease-in-out infinite;
+  }
+
+  /* ##################################################################################### */
