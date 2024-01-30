@@ -134,10 +134,14 @@
 							based on the order of the symbols and the corresponding interval for each. As the symbol
 							length
 							increases, the interval will also become narrower.</p>
+
 						<p>Now, let's examine the process of arithmetic coding with an example.</p>
+
 						<h4>Encoding:</h4>
+
 						<p>Suppose we want to encode the message "abc" according to the frequency table below.
 							First, we determine the probability of each symbol according to the following formula:</p>
+
 						<math display='block'>
 							<mrow>
 								<mi><b>P</b></mi>
@@ -149,49 +153,26 @@
 								</mfrac>
 							</mrow>
 						</math>
-
-						<center>
-							<math xmlns="http://www.w3.org/1998/Math/MathML">
-								<mrow>
-									<msup>
-										<mi><b>P(X)</b></mi>
-									</msup>
-									<mo><b>=</b></mo>
-									<msup>
-										<mi><b>Frequency of symbol X</b></mi>
-									</msup>
-									<mo><b>/</b></mo>
-									<msup>
-										<mi><b>Sum of all frequencies</b></mi>
-									</msup>
-								</mrow>
-							</math>
-						</center>
 						<!-- <cite><em><strong><a href="http://www.buck.co/" data-type="URL" data-id="http://www.buck.co/">By
 										Buck</a></strong></em> , <strong>Qualcomm </strong></cite> -->
 					</blockquote>
 
 					<li class="list-inline-item"><img decoding="async" width="90%" height="90%" data-id="190"
 							src="/assets/images/Img For Posts/Table for Symbols and Probability of them.jpg" alt=""
-							class="wp-image-190" /></li>
+							class="wp-image-190" style="margin: 30px 1px 30px 1px;"/></li>
+
 					<p>Now, using the following equation, we obtain the values of the intervals:</p>
-					<center>
-						<math xmlns="http://www.w3.org/1998/Math/MathML">
-							<mrow>
-								<msup>
-									<mi><b>S</b></mi>
-								</msup>
-								<mo><b>+</b></mo>
-								<msup>
-									<mi></mi>
-								</msup>
-								<mo><b>P(X)</b></mo><b>*</b>
-								<msup>
-									<mi><b>R</b></mi>
-								</msup>
-							</mrow>
-						</math>
-					</center>
+					
+					<math display='block'>
+						<mrow>
+							<mi><b>S</b></mi>
+							<mo><b>+</b></mo>
+							<mi><b>P</b></mi>
+							<mi><b>(X)</b></mi>
+							<mo><b>&#x00D7;</b></mo>
+							<mi><b>R</b></mi>
+						</mrow>
+					</math>
 
 					<p><b>S:</b> Cumulative sum of all previous probabilities.</p>
 					<p><b>P(X):</b> Symbol probability.</p>
