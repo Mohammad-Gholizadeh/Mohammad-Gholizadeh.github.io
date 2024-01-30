@@ -26,6 +26,8 @@
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script defer src="/assets/js/main.js"></script>
+	<script type=”text/javascript”
+		src=”http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML”></script>
 
 </head>
 
@@ -136,6 +138,20 @@
 						<h4>Encoding:</h4>
 						<p>Suppose we want to encode the message "abc" according to the frequency table below.
 							First, we determine the probability of each symbol according to the following formula:</p>
+						<math display='block'>
+							<mrow>
+								<mi>P</mi>
+								<mfenced>
+									<mi>(X)</mi>
+								</mfenced>
+								<mo>=</mo>
+								<mfrac>
+									<mi>Frequency of symbol X</mi>
+									<mi>Sum of all frequencies</mi>
+								</mfrac>
+							</mrow>
+						</math>
+
 						<center>
 							<math xmlns="http://www.w3.org/1998/Math/MathML">
 								<mrow>
