@@ -142,7 +142,7 @@
 						<p>Suppose we want to encode the message "abc" according to the frequency table below.
 							First, we determine the probability of each symbol according to the following formula:</p>
 
-						<math display='block'>
+						<math display='block' style="margin: 30px 1px 30px 1px;">
 							<mrow>
 								<mi><b>P</b></mi>
 								<mi><b>(X)</b></mi>
@@ -163,7 +163,7 @@
 
 					<p>Now, using the following equation, we obtain the values of the intervals:</p>
 					
-					<math display='block'>
+					<math display='block' style="margin: 30px 1px 30px 1px;">
 						<mrow>
 							<mi><b>S</b></mi>
 							<mo><b>+</b></mo>
@@ -183,7 +183,7 @@
 					<p>The number of steps required to calculate the intervals is equal to Stages = L + 1.</p>
 
 					<h5>In the first step, we have:</h5>
-					<center><b>R = 1.0 - 0.0</b></center>
+					<center style="margin: 30px 1px 30px 1px;"><b>R = 1.0 - 0.0</b></center>
 					<ul>
 
 						<li><b>a :</b> 0.0 --- 0.0+ (0.2) * 1 = 0.2 ---------> (0.0 , 0.2)</li>
@@ -195,12 +195,12 @@
 					</ul>
 					<p><b>Note: </b>The beginning of each interval is the end of the previous interval.</p>
 					<li class="list-inline-item"><img decoding="async" width="90%" height="90%" data-id="190"
-							src="/assets/images/Img For Posts/Interval-1.jpg" alt="" class="wp-image-190" /></li>
+							src="/assets/images/Img For Posts/Interval-1.jpg" alt="" class="wp-image-190" style="margin: 30px 1px 30px 1px;"/></li>
 
 					<h5>In the second step, we have:</h5>
 					<p>The first symbol in the message is 'a', so the new R is obtained based on the new interval for
 						the symbol 'a':</p>
-					<center><b>R = 0.2 - 0.0 = 0.2</b></center>
+					<center style="margin: 30px 1px 30px 1px;"><b>R = 0.2 - 0.0 = 0.2</b></center>
 					<ul>
 
 						<li><b>a :</b> 0.0 --- 0.0+ (0.2) * 0.2 = 0.04 ---------> (0.0 , 0.04)</li>
@@ -213,14 +213,14 @@
 					<p>Each symbol takes a portion of the line, and its length is equal to its probability. For example,
 						for the
 						symbol 'b', we have:</p>
-					<center><b>0.7 = (0.18 – 0.04)/0.2</b></center>
+					<center style="margin: 30px 1px 30px 1px;"><b>0.7 = (0.18 – 0.04)/0.2</b></center>
 					<li class="list-inline-item"><img decoding="async" width="90%" height="90%" data-id="190"
-							src="/assets/images/Img For Posts/Interval-2.jpg" alt="" class="wp-image-190" /></li>
+							src="/assets/images/Img For Posts/Interval-2.jpg" alt="" class="wp-image-190" style="margin: 30px 1px 30px 1px;"/></li>
 
 					<h5>In the third step, we have:</h5>
 					<p>The second symbol in the message is 'b', so the new R is obtained based on the new interval for
 						the symbol 'b':</p>
-					<center><b>R = 0.18 – 0.04 = 0.14</b></center>
+					<center style="margin: 30px 1px 30px 1px;"><b>R = 0.18 – 0.04 = 0.14</b></center>
 					<ul>
 
 						<li><b>a :</b> 0.04 --- 0.04+ (0.2) * 0.14 = 0.068 ---------> (0.04 , 0.068)</li>
@@ -231,13 +231,13 @@
 
 					</ul>
 					<li class="list-inline-item"><img decoding="async" width="90%" height="90%" data-id="190"
-							src="/assets/images/Img For Posts/Interval-3.jpg" alt="" class="wp-image-190" /></li>
+							src="/assets/images/Img For Posts/Interval-3.jpg" alt="" class="wp-image-190" style="margin: 30px 1px 30px 1px;"/></li>
 
 					<h5>In the fourth step, we have:</h5>
 					<p>The third and last symbol in the message is 'c', so the new R is obtained based on the new
 						interval for
 						the symbol 'c':</p>
-					<center><b>R = 0.18 – 0.166 = 0.014</b></center>
+					<center style="margin: 30px 1px 30px 1px;"><b>R = 0.18 – 0.166 = 0.014</b></center>
 					<ul>
 
 						<li><b>a :</b> 0.166 --- 0.166+ (0.2) * 0.014 = 0.1688 ------> (0.166 , 0.1688)</li>
@@ -248,17 +248,17 @@
 
 					</ul>
 					<li class="list-inline-item"><img decoding="async" width="90%" height="90%" data-id="190"
-							src="/assets/images/Img For Posts/Interval-4.jpg" alt="" class="wp-image-190" /></li>
+							src="/assets/images/Img For Posts/Interval-4.jpg" alt="" class="wp-image-190" style="margin: 30px 1px 30px 1px;"/></li>
 
 					<h5>Therefore, the final interval is obtained: </h5>
-					<center><b>(0.0,1.0)---->(0.0,0.2)---->(0.04,0.18)---->(0.166,0.18)</b></center>
+					<center style="margin: 30px 1px 30px 1px;"><b>(0.0,1.0)---->(0.0,0.2)---->(0.04,0.18)---->(0.166,0.18)</b></center>
 
 					<p>Based on the last interval obtained (0.166, 0.18), any value within this interval can be used to
 						encode
 						the message. For example, we choose the average value: </p>
-					<center><b>0.173 = (0.166 + 0.18)/2.</b></center>
+					<center style="margin: 30px 1px 30px 1px;"><b>0.173 = (0.166 + 0.18)/2.</b></center>
 					<p>Therefore, according to the frequency table above:</p>
-					<center><b>abc ------------> 0.173.</b></center>
+					<center style="margin: 30px 1px 30px 1px;"><b>abc ------------> 0.173.</b></center>
 					<p>Note that if the frequency table changes, the encoded message value will also change. Up to this
 						point,
 						the encoding process has been completed.</p>
@@ -274,7 +274,7 @@
 						<li>Number of symbols in the original message</li>
 
 					</ul>
-					<center><b>L = 3 , C = 0.173 </b></center>
+					<center style="margin: 30px 1px 30px 1px;"><b>L = 3 , C = 0.173 </b></center>
 
 					<h5>Step 1: </h5>
 					<p>Calculating the probabilities of symbols.</p>
@@ -283,23 +283,23 @@
 					<p>The value 0.173 falls within the interval (0.0, 0.2). Therefore, the first symbol in the encoded
 						message is 'a'.</p>
 					<li class="list-inline-item"><img decoding="async" width="90%" height="90%" data-id="190"
-							src="/assets/images/Img For Posts/Interval-5.jpg" alt="" class="wp-image-190" /></li>
+							src="/assets/images/Img For Posts/Interval-5.jpg" alt="" class="wp-image-190" style="margin: 30px 1px 30px 1px;"/></li>
 					<p>The value 0.173 falls within the interval (0.04, 0.18). Hence, the second symbol in the encoded
 						message is 'b'.</p>
 					<li class="list-inline-item"><img decoding="async" width="90%" height="90%" data-id="190"
-							src="/assets/images/Img For Posts/Interval-6.jpg" alt="" class="wp-image-190" /></li>
+							src="/assets/images/Img For Posts/Interval-6.jpg" alt="" class="wp-image-190" style="margin: 30px 1px 30px 1px;"/></li>
 					<p>The value 0.173 falls within the interval (0.166, 0.18). Therefore, the third symbol in the
 						encoded
 						message is 'c'.</p>
 					<li class="list-inline-item"><img decoding="async" width="90%" height="90%" data-id="190"
-							src="/assets/images/Img For Posts/Interval-7.jpg" alt="" class="wp-image-190" /></li>
+							src="/assets/images/Img For Posts/Interval-7.jpg" alt="" class="wp-image-190" style="margin: 30px 1px 30px 1px;"/></li>
 					<p>Considering that the number of symbols in the original message was 3, the encoding process is
 						complete, and the message is as follows:</p>
-					<center><b>Message --------> abc</b></center>
+					<center style="margin: 30px 1px 30px 1px;"><b>Message --------> abc</b></center>
 					<p>The general overview of the steps:</p>
 					<li class="list-inline-item"><img decoding="async" width="90%" height="90%" data-id="190"
 							src="/assets/images/Img For Posts/General Overview of Steps.jpg" alt=""
-							class="wp-image-190" /></li>
+							class="wp-image-190" style="margin: 30px 1px 30px 1px;"/></li>
 
 					<hr>
 					<h5>Simulation: </h5>
